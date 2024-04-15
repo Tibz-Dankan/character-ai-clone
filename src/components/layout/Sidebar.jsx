@@ -109,9 +109,7 @@ export const Sidebar = () => {
                     {icon}
                     <Typography
                       color="inherit"
-                      className={`font-medium capitalize ${
-                        isActive && "text-gray-800"
-                      }`}
+                      className={`font-medium capitalize`}
                       placeholder={""}
                     >
                       {name}
