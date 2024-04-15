@@ -158,7 +158,6 @@ export const Sidebar = () => {
           >
             {extractFirstLetter("username")}
           </span>
-
           <p className="flex-1 flex  justify-between">
             <span
               className="cursor-pointer flex items-center gap-1

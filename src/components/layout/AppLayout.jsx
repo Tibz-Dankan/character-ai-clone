@@ -9,13 +9,8 @@ export const AppLayout = (props) => {
          w-full relative"
       >
         <Sidebar />
-        <div className={`p-4 pt-0 xl:ml-72 relative`}>
-          <main
-            className="flex items-center justify-center
-            min-h-[84vh] h-auto"
-          >
-            {props.children}
-          </main>
+        <div className={`p-4 sm:px-12 pt-8 xl:ml-72 relative`}>
+          <main className="w-full min-h-[84vh] h-auto">{props.children}</main>
         </div>
       </div>
     </Fragment>
