@@ -43,7 +43,7 @@ export const Sidebar = () => {
       <div className="relative">
         <span
           onClick={() => handleCloseSidebar()}
-          className="cursor-pointer absolute right-5 top-10 grid 
+          className="cursor-pointer absolute right-5 top-9 grid 
           sxl:hidden z-20"
         >
           <IconContext.Provider value={{ size: "1.0rem", color: "#f8f9fa" }}>
@@ -53,7 +53,7 @@ export const Sidebar = () => {
       </div>
       <div
         className="flex items-center justify-start gap-0 relative 
-         w-full h-16 pl-5 mt-4"
+         w-full h-14 pl-5 mt-4"
       >
         <span
           className="text-gray-50 text-lg font-semibold hidden
@@ -120,6 +120,32 @@ export const Sidebar = () => {
             </li>
           ))}
         </ul>
+        <div className="space-y-3 mt-2">
+          <p className="text-gray-50">Chats</p>
+          <p className="text-gray-500 text-sm">Today</p>
+          <div className="flex flex-col gap-4 text-gray-50">
+            <p className="flex items-center gap-2">
+              <span
+                className="cursor-pointer grid place-items-center  bg-gray-300s p-1
+                 w-8 h-8 rounded-[50%] text-gray-50 first-letter:uppercase 
+                 bg-gradient-to-r from-indigo-500 via-purple-500 to-purple-800"
+              >
+                {extractFirstLetter("John")}
+              </span>
+              <span className="text-lgs">John</span>
+            </p>
+            <p className="flex items-center gap-2">
+              <span
+                className="cursor-pointer grid place-items-center  bg-gray-300s p-1
+                 w-8 h-8 rounded-[50%] text-gray-50 first-letter:uppercase 
+                 bg-gradient-to-r from-orange-500 via-brown-500 to-gray-800"
+              >
+                {extractFirstLetter("Martin")}
+              </span>
+              <span className="text-lgs">Martin</span>
+            </p>
+          </div>
+        </div>
         <div
           className="flex items-center justify-start gap-3
            rounded-md p-2 text-white  hover:bg-gray-800
