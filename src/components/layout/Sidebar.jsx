@@ -27,7 +27,7 @@ export const Sidebar = () => {
           </IconContext.Provider>
         </span>
       ),
-      path: "/",
+      path: "",
     },
   ];
 
@@ -64,17 +64,13 @@ export const Sidebar = () => {
         <ul className="mb-4 flex flex-col gap-1">
           {pages.map(({ icon, name, path }) => (
             <li key={name}>
-              <NavLink to={`/$/${path}`}>
+              <NavLink to={`/${path}`}>
                 {({ isActive }) => (
                   <Button
                     className={`flex items-center gap-4 bg-inherit px-4 
-                      capitalize text-gray-50 shadow-none hover:bg-gray-300
-                      hover:shadow-none relative outline-none
-                    ${
-                      isActive &&
-                      `bg-gray-300 before:absolute before:left-0 before:top-0 
-                       before:h-full before:w-2 before:bg-primary before:rounded-l-md`
-                    }`}
+                      capitalize text-gray-50 shadow-none hover:bg-gray-800
+                      focus:bg-gray-800 relative outline-none
+                    ${isActive && `bg-gray-800`}`}
                     fullWidth
                     placeholder={""}
                   >
@@ -101,7 +97,7 @@ export const Sidebar = () => {
         >
           <span
             className="cursor-pointer grid place-items-center  bg-gray-300 p-1
-              w-14 h-14 rounded-[50%]"
+            w-14 h-14 rounded-[50%]"
           >
             <IconContext.Provider value={{ size: "1.8rem", color: "#495057" }}>
               <IoPerson />
