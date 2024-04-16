@@ -1,10 +1,11 @@
 import React, { Fragment } from "react";
 import { extractFirstLetter } from "../utils/extractFirstLetter";
+import { ReplySection } from "../components/layout/ReplySection";
 
 export const Home = () => {
   return (
     <Fragment>
-      <div className="w-full">
+      <div className="w-full space-y-8">
         <header className="flex items-end justify-between text-gray-50">
           <div className="flex flex-col gap-2 justify-center">
             <p className="text-lg text-gray-500">Welcome back,</p>
@@ -27,6 +28,9 @@ export const Home = () => {
             />
           </div>
         </header>
+        <div className="w-full">
+          <ReplySection />
+        </div>
       </div>
     </Fragment>
   );
