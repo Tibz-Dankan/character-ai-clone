@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { extractFirstLetter } from "../utils/extractFirstLetter";
 import { ReplySection } from "../components/layout/ReplySection";
 import { ForYouSection } from "../components/layout/ForYouSection";
+import { Featured } from "../components/layout/Featured";
 
 export const Home = () => {
   return (
@@ -34,6 +35,9 @@ export const Home = () => {
         </div>
         <div className="w-full">
           <ForYouSection />
+        </div>
+        <div className="w-full">
+          <Featured />
         </div>
       </div>
     </Fragment>
