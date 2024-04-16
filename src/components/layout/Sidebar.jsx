@@ -9,6 +9,7 @@ import { HiMiniChevronDoubleLeft } from "react-icons/hi2";
 import { AiOutlinePlus } from "react-icons/ai";
 import { extractFirstLetter } from "../../utils/extractFirstLetter";
 import { GoChevronDown } from "react-icons/go";
+import { ChatMates } from "../UI/ChatMates";
 
 export const Sidebar = () => {
   const isOpenSidebar = useSelector((state) => state.sidebar.isOpen);
@@ -120,32 +121,7 @@ export const Sidebar = () => {
             </li>
           ))}
         </ul>
-        <div className="space-y-3 mt-2">
-          <p className="text-gray-50">Chats</p>
-          <p className="text-gray-500 text-sm">Today</p>
-          <div className="flex flex-col gap-4 text-gray-50">
-            <p className="flex items-center gap-2">
-              <span
-                className="cursor-pointer grid place-items-center  bg-gray-300s p-1
-                 w-8 h-8 rounded-[50%] text-gray-50 first-letter:uppercase 
-                 bg-gradient-to-r from-indigo-500 via-purple-500 to-purple-800"
-              >
-                {extractFirstLetter("John")}
-              </span>
-              <span className="text-lgs">John</span>
-            </p>
-            <p className="flex items-center gap-2">
-              <span
-                className="cursor-pointer grid place-items-center  bg-gray-300s p-1
-                 w-8 h-8 rounded-[50%] text-gray-50 first-letter:uppercase 
-                 bg-gradient-to-r from-orange-500 via-brown-500 to-gray-800"
-              >
-                {extractFirstLetter("Martin")}
-              </span>
-              <span className="text-lgs">Martin</span>
-            </p>
-          </div>
-        </div>
+        <ChatMates />
         <div
           className="flex items-center justify-start gap-3
            rounded-md p-2 text-white  hover:bg-gray-800
