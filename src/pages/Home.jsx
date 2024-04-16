@@ -4,6 +4,7 @@ import { ReplySection } from "../components/layout/ReplySection";
 import { ForYouSection } from "../components/layout/ForYouSection";
 import { Featured } from "../components/layout/Featured";
 import { AllCategories } from "../components/layout/AllCategories";
+import { TrySection } from "../components/layout/TrySection";
 
 export const Home = () => {
   return (
@@ -36,6 +37,9 @@ export const Home = () => {
         </div>
         <div className="w-full">
           <ForYouSection />
+        </div>
+        <div className="w-full">
+          <TrySection />
         </div>
         <div className="w-full">
           <Featured />
