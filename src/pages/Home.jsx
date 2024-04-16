@@ -5,6 +5,7 @@ import { ForYouSection } from "../components/layout/ForYouSection";
 import { Featured } from "../components/layout/Featured";
 import { AllCategories } from "../components/layout/AllCategories";
 import { TrySection } from "../components/layout/TrySection";
+import { TrySaySection } from "../components/layout/TrySaySection";
 
 export const Home = () => {
   return (
@@ -46,6 +47,9 @@ export const Home = () => {
         </div>
         <div className="w-full">
           <AllCategories />
+        </div>
+        <div className="w-full">
+          <TrySaySection />
         </div>
       </div>
     </Fragment>
